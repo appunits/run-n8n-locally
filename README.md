@@ -1,5 +1,5 @@
-# Run n8n for free
-Use n8n for free and run it locally on your device!
+# Run n8n + [WAHA](https://github.com/devlikeapro/waha) for free
+Use n8n + [WAHA](https://github.com/devlikeapro/waha) for free and run it locally on your device!
 
 ## How to do so 🤔?
 there are 2 ways:

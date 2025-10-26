@@ -7,5 +7,17 @@ services:
       - n8n_data:/home/node/.n8n
     restart: unless-stopped
 
+  # The WAHA image that you need to use depends on your device architecture as explained below:
+  # For ARM devices like Mac(M1/M2), Raspberry Pi, ...etc -> devlikeapro/waha:arm
+  # Windows/Linux -> devlikeapro/waha
+
+  waha:
+    image: devlikeapro/waha:arm
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    depends_on:
+      - n8n
+
 volumes:
   n8n_data:
